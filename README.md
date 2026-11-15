@@ -1,28 +1,47 @@
 # Algoritmia-S1
 
-## Algoritmo de parqueadero
+## Algoritmo de saludo
 
-El programa [Parqueadero.js](./Parqueadero.js) calcula cuánto debe pagar un
-vehículo según su tipo y el tiempo de permanencia.
+El programa [saludo.js](./saludo.js) solicita el nombre del usuario y muestra un
+mensaje de bienvenida.
 
 ### Cómo ejecutarlo
 
 Se necesita tener Node.js instalado. Desde la carpeta del proyecto, ejecuta:
 
 ```bash
-node Parqueadero.js
+node saludo.js
 ```
 
-El programa solicita el tipo de vehículo (1 para carro o 2 para moto), los
-minutos de permanencia y si se tiene factura de compra (S/N).
+El programa pregunta: `¿Cómo te llamas?` y después imprime:
+`Hola, <nombre>, bienvenido a Algoritmia`.
 
-### Reglas de cobro
+## Algoritmo de EdadEnDias
 
-- Los primeros 15 minutos son gratis.
-- Después de los 15 minutos, cada hora iniciada cuesta $4.000 para un carro y
-  $2.000 para una moto. Por ejemplo, 16 minutos se cobran como una hora.
-- El cobro tiene un máximo de $30.000.
-- Si se presenta factura de compra, se aplica un descuento del 50% al valor
-  calculado.
-- El programa informa si los minutos son negativos o si el tipo de vehículo no
-  es válido.
+El programa [EdadEnDias.js](./EdadEnDias.js) calcula cuántos días ha vivido una
+persona según su edad en años.
+
+### Cómo ejecutarlo
+
+```bash
+node EdadEnDias.js
+```
+
+El programa pide la edad en años y muestra el total de días aproximados,
+calculados como `edad * 365`.
+
+## Algoritmo de promedio de notas
+
+El programa [PromedioNotas.js](./PromedioNotas.js) calcula el promedio de tres
+notas ingresadas por el usuario.
+
+### Cómo ejecutarlo
+
+```bash
+node PromedioNotas.js
+```
+
+El programa solicita `Nota 1`, `Nota 2` y `Nota 3`, valida que sean números
+válidos entre 0 y 5, y luego imprime el promedio con dos decimales.
+
+
